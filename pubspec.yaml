@@ -1,6 +1,6 @@
 name: neocities_cli
 description: A Dart command line interface for Neocities
-version: 1.0.0
+version: 1.0.1
 repository: https://github.com/natebot13/neocities_cli
 
 environment:
