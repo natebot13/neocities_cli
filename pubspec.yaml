@@ -1,0 +1,20 @@
+name: neocities_cli
+description: Neocities command line interface
+version: 0.0.1
+repository: https://github.com/natebot13/neocities_cli
+
+environment:
+  sdk: ^3.3.4
+
+# Add regular dependencies here.
+dependencies:
+  args: ^2.4.2
+  neocities:
+
+dev_dependencies:
+  lints: ^4.0.0
+  test: ^1.24.0
+
+dependency_overrides:
+  neocities:
+    path: ../neocities_dart
