@@ -36,9 +36,6 @@ class NeocitiesCommand extends Command {
         CommandType.rename => 'Rename a file',
         CommandType.key => 'Get the api key for your site',
       };
-  
-  @override
-  String get usage => super.usage;
 
   @override
   FutureOr? run() async {

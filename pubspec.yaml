@@ -1,5 +1,5 @@
 name: neocities_cli
-description: Neocities command line interface
+description: A Dart command line interface for Neocities
 version: 1.0.0
 repository: https://github.com/natebot13/neocities_cli
 
