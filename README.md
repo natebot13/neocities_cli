@@ -2,7 +2,7 @@ A command line interface for my dart [Neocities API](https://github.com/natebot1
 
 Meant to be globally activated, by simply running:
 
-`dart pub global activate neocities`
+`dart pub global activate neocities_cli`
 
 Then start using it:
 
