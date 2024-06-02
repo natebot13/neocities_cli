@@ -12,6 +12,7 @@ enum CommandType {
   list,
   delete,
   upload,
+  rename,
   key,
 }
 
@@ -28,12 +29,16 @@ class NeocitiesCommand extends Command {
 
   @override
   String get description => switch (command) {
-        CommandType.info => "Show the info of a site",
-        CommandType.list => "List the files in your site",
-        CommandType.delete => "Delete files from your site",
-        CommandType.upload => "Upload files to your site",
-        CommandType.key => "Get the api key for your site",
+        CommandType.info => 'Show the info of a site',
+        CommandType.list => 'List the files in your site',
+        CommandType.delete => 'Delete files from your site',
+        CommandType.upload => 'Upload files to your site',
+        CommandType.rename => 'Rename a file',
+        CommandType.key => 'Get the api key for your site',
       };
+  
+  @override
+  String get usage => super.usage;
 
   @override
   FutureOr? run() async {
@@ -76,6 +81,16 @@ class NeocitiesCommand extends Command {
             }).toList(),
           );
           break;
+        case CommandType.rename:
+          if (args.isEmpty) {
+            print('No files specified');
+            break;
+          }
+          if (args.length == 1) {
+            print('No destination filename');
+            break;
+          }
+          print(await client.rename(args[0], args[1]));
         case CommandType.key:
           print(await client.key());
           break;
