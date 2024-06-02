@@ -1,4 +1,4 @@
-A command line interface for the [Neocities API](https://github.com/natebot13/neocities_dart).
+A command line interface for my dart [Neocities API](https://github.com/natebot13/neocities_dart).
 
 Meant to be globally activated, by simply running:
 
@@ -29,7 +29,7 @@ Available commands:
 Run "neocities help <command>" for more information about a command.
 ```
 
-```json
+```
 $ neocities info example
 {
   "sitename": "example",
@@ -44,7 +44,7 @@ $ neocities info example
 
 To use the authenticated API, either add your username and password to the command, or generate and use an API key.
 
-```json
+```
 $ neocities --key key1234neocities info
 {
   "sitename": "yoursite",
