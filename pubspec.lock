@@ -220,7 +220,7 @@ packages:
       path: "../neocities_dart"
       relative: true
     source: path
-    version: "0.0.1"
+    version: "1.0.0"
   node_preamble:
     dependency: transitive
     description:
